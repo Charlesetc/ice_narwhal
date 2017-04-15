@@ -1,0 +1,55 @@
+/* This file is for your main application css. */
+
+body {
+
+  padding-top:30px;
+}
+header {
+  font-size:30px;
+  position:relative;
+}
+
+nav {
+  position:absolute;
+  right:0px;
+  top:0px;
+  font-size: 20px;
+  text-align:right;
+  padding-top:10px;
+  padding-right:4px;
+}
+
+nav li {
+  display: inline-block;
+}
+nav li a {
+  margin-left:10px;
+  color:black;
+}
+nav li a:hover {
+  color: #a3e0ff;
+}
+
+
+.intro-header {
+  padding-bottom:20px;
+  font-size:80px;
+}
+
+.ice {
+  color:black;
+}
+.ice:hover {
+  color:#a3e0ff;
+  text-decoration:none;
+}
+.ice:active {
+  color:#a3e0ff;
+  text-decoration:none;
+}
+
+.ice::before {
+  content: "ice";
+  color: #a3e0ff;
+}
+
