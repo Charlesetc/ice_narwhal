@@ -1,0 +1,6 @@
+
+<%= for fragment <- @current_user.fragments do %>
+  <div class='fragment'>
+    <p class="lead"><%= fragment.label %></p>
+  </div>
+<% end %>

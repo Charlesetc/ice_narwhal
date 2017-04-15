@@ -6,6 +6,8 @@ defmodule IceNarwhal.User do
     field :password, :string, virtual: true
     field :password_hash, :string
 
+    has_many :fragments, IceNarwhal.Fragment
+
     timestamps()
   end
 

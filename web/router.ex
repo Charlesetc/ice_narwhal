@@ -29,6 +29,8 @@ defmodule IceNarwhal.Router do
 
     resources "/sessions", SessionController, only: [:new, :create, :delete]
 
+    resources "/fragments", FragmentController, only: [:show, :new, :create]
+
   end
 
   # Other scopes may use custom stacks.

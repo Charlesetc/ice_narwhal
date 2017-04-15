@@ -1,0 +1,3 @@
+
+<h2><%= @fragment.label %></h2>
+<p><%= @fragment.user.tag %></p>
