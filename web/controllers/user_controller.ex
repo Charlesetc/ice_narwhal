@@ -7,18 +7,18 @@ defmodule IceNarwhal.UserController do
   plug :scrub_params, "user" when action in [:create]
 
   def show(conn, %{"id" => id}) do
-    user = Repo.get!(IceNarwhal.User, id)
+    user = Repo.get!(User, id)
     render(conn, "show.html", user: user)
   end
 
   def new(conn, _) do
-    changeset = IceNarwhal.User.changeset(%IceNarwhal.User{})
+    changeset = User.changeset(%User{})
     render conn, "new.html", changeset: changeset
   end
 
   def create(conn, %{"user" => params}) do
 
-    changeset = %IceNarwhal.User{} |> IceNarwhal.User.registration_changeset(params)
+    changeset = %User{} |> User.registration_changeset(params)
 
     case Repo.insert(changeset) do
       {:ok, user} ->

@@ -53,3 +53,52 @@ nav li a:hover {
   color: #a3e0ff;
 }
 
+/* Fragments */
+
+.fragment {
+  width:160px;
+  height:160px;
+  margin:6px;
+  display: inline-block;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  overflow:hidden;
+  position:relative;
+}
+
+.fragment::before {
+  content: "";
+  position:absolute;
+  width:160px;
+  height:160px;
+  box-shadow: 0px -10px 20px 3px white inset;
+}
+
+.fragment:hover h2 {
+  color: #ff3d8d;
+}
+
+a:active , a:focus {
+  outline: none;
+}
+
+.fragment h2 {
+  margin:0;
+  padding: 0;
+  padding-top:60px;
+  color: black;
+  text-align:center;
+  line-height:23px;
+}
+
+.fragment-plus h2 {
+  font-size:90px;
+  color: #a3e0ff;
+}
+
+.current_user {
+  color:  #ff3d8d;
+  font-weight: bold;
+  margin-left:20px;
+
+}

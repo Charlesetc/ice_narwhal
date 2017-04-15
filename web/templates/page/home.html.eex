@@ -1,6 +1,14 @@
 
 <%= for fragment <- @current_user.fragments do %>
+  <a href=<%= fragment_path(IceNarwhal.Endpoint, :show, fragment) %>>
   <div class='fragment'>
-    <p class="lead"><%= fragment.label %></p>
+    <h2><%= fragment.label %></h2>
   </div>
+  </a>
 <% end %>
+
+  <a href=<%= fragment_path(IceNarwhal.Endpoint, :new) %>>
+  <div class='fragment fragment-plus'>
+    <h2>+</h2>
+  </div>
+  </a>
