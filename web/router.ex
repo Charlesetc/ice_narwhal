@@ -25,6 +25,8 @@ defmodule IceNarwhal.Router do
 
     get "/", PageController, :index
 
+    post "/shards/create", ShardController, :create
+
     resources "/users", UserController, only: [:show, :new, :create]
 
     resources "/sessions", SessionController, only: [:new, :create, :delete]

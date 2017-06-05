@@ -4,6 +4,7 @@ defmodule IceNarwhal.Fragment do
   schema "fragments" do
     field :label, :string
     belongs_to :user, IceNarwhal.User
+    has_many :shards, IceNarwhal.Shard
 
     timestamps()
   end
